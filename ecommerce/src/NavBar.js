@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
+import {assignInput} from './actions'
 
 class NavBar extends Component {
   constructor(props) {
@@ -18,6 +20,9 @@ class NavBar extends Component {
             <div className="w3l_logo">
               <h1><a href="index.html">Electronic Store<span>Your stores. Your place.</span></a></h1>
             </div>
+
+            <input type="text" onChange={(e) => this.props.assignInput(e.target.value)} />
+
             <div className="search">
               <input className="search_box" type="checkbox" id="search_box"/>
               <label className="icon-search"><span className="glyphicon glyphicon-search" aria-hidden="true"></span></label>
@@ -28,6 +33,8 @@ class NavBar extends Component {
                 </form>
               </div>
             </div>
+
+
             <div className="cart cart box_1">
               <form action="#" method="post" className="last">
                 <input type="hidden" name="cmd" value="_cart" />
@@ -111,4 +118,17 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+const mapStateToProps = (state) => {
+  return {
+
+  }
+}
+
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    assignInput: (input) => dispatch(assignInput(input))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

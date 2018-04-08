@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 
+import Item from './Item'
+
 class Home extends Component {
   constructor(props) {
     super(props)
@@ -590,7 +592,9 @@ class Home extends Component {
       			<div className="clearfix"> </div> */}
       		</div>
       	</div>
-      	<div className="modal video-modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModal">
+
+
+      	{/* <div className="modal video-modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModal">
       		<div className="modal-dialog" role="document">
       			<div className="modal-content">
       				<div className="modal-header">
@@ -648,8 +652,10 @@ class Home extends Component {
       				</section>
       			</div>
       		</div>
-      	</div>
-      	<div className="modal video-modal fade" id="myModal1" tabIndex="-1" role="dialog" aria-labelledby="myModal1">
+      	</div> */}
+
+
+      	{/* <div className="modal video-modal fade" id="myModal1" tabIndex="-1" role="dialog" aria-labelledby="myModal1">
       		<div className="modal-dialog" role="document">
       			<div className="modal-content">
       				<div className="modal-header">
@@ -712,8 +718,10 @@ class Home extends Component {
       				</section>
       			</div>
       		</div>
-      	</div>
-      	<div className="modal video-modal fade" id="myModal2" tabIndex="-1" role="dialog" aria-labelledby="myModal2">
+      	</div> */}
+
+
+      	{/* <div className="modal video-modal fade" id="myModal2" tabIndex="-1" role="dialog" aria-labelledby="myModal2">
       		<div className="modal-dialog" role="document">
       			<div className="modal-content">
       				<div className="modal-header">
@@ -771,8 +779,10 @@ class Home extends Component {
       				</section>
       			</div>
       		</div>
-      	</div>
-      	<div className="modal video-modal fade" id="myModal3" tabIndex="-1" role="dialog" aria-labelledby="myModal3">
+      	</div> */}
+
+
+      	{/* <div className="modal video-modal fade" id="myModal3" tabIndex="-1" role="dialog" aria-labelledby="myModal3">
       		<div className="modal-dialog" role="document">
       			<div className="modal-content">
       				<div className="modal-header">
@@ -830,8 +840,10 @@ class Home extends Component {
       				</section>
       			</div>
       		</div>
-      	</div>
-      	<div className="modal video-modal fade" id="myModal4" tabIndex="-1" role="dialog" aria-labelledby="myModal4">
+      	</div> */}
+
+
+      	{/* <div className="modal video-modal fade" id="myModal4" tabIndex="-1" role="dialog" aria-labelledby="myModal4">
       		<div className="modal-dialog" role="document">
       			<div className="modal-content">
       				<div className="modal-header">
@@ -890,8 +902,10 @@ class Home extends Component {
       				</section>
       			</div>
       		</div>
-      	</div>
-      	<div className="modal video-modal fade" id="myModal5" tabIndex="-1" role="dialog" aria-labelledby="myModal5">
+      	</div> */}
+
+
+        {/* <div className="modal video-modal fade" id="myModal5" tabIndex="-1" role="dialog" aria-labelledby="myModal5">
       		<div className="modal-dialog" role="document">
       			<div className="modal-content">
       				<div className="modal-header">
@@ -950,8 +964,10 @@ class Home extends Component {
       				</section>
       			</div>
       		</div>
-      	</div>
-      	<div className="modal video-modal fade" id="myModal6" tabIndex="-1" role="dialog" aria-labelledby="myModal6">
+      	</div> */}
+
+
+      	{/* <div className="modal video-modal fade" id="myModal6" tabIndex="-1" role="dialog" aria-labelledby="myModal6">
       		<div className="modal-dialog" role="document">
       			<div className="modal-content">
       				<div className="modal-header">
@@ -1014,7 +1030,7 @@ class Home extends Component {
       				</section>
       			</div>
       		</div>
-      	</div>
+      	</div> */}
       	<div className="banner-bottom1">
       		<div className="agileinfo_banner_bottom1_grids">
       			<div className="col-md-7 agileinfo_banner_bottom1_grid_left">
@@ -1030,7 +1046,7 @@ class Home extends Component {
       			<div className="clearfix"> </div>
       		</div>
       	</div>
-      	<div className="special-deals">
+      	{/* <div className="special-deals">
       		<div className="container">
       			<h2>Special Deals</h2>
       			<div className="w3agile_special_deals_grids">
@@ -1092,132 +1108,14 @@ class Home extends Component {
       				<div className="clearfix"> </div>
       			</div>
       		</div>
-      	</div>
+      	</div> */}
       	<div className="new-products">
       		<div className="container">
       			<h3>New Products</h3>
-      			<div className="agileinfo_new_products_grids">
-      				<div className="col-md-3 agileinfo_new_products_grid">
-      					<div className="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-      						<div className="hs-wrapper hs-wrapper1">
-      							<img src="images/25.jpg" alt=" " className="img-responsive" />
-      							<img src="images/23.jpg" alt=" " className="img-responsive" />
-      							<img src="images/24.jpg" alt=" " className="img-responsive" />
-      							<img src="images/22.jpg" alt=" " className="img-responsive" />
-      							<img src="images/26.jpg" alt=" " className="img-responsive" />
-      							<div className="w3_hs_bottom w3_hs_bottom_sub">
-      								<ul>
-      									<li>
-      										<a href="#" data-toggle="modal" data-target="#myModal2"><span className="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-      									</li>
-      								</ul>
-      							</div>
-      						</div>
-      						<h5><a href="single.html">Laptops</a></h5>
-      						<div className="simpleCart_shelfItem">
-      							<p><span>$520</span> <i className="item_price">$500</i></p>
-      							<form action="#" method="post">
-      								<input type="hidden" name="cmd" value="_cart"/>
-      								<input type="hidden" name="add" value="1"/>
-      								<input type="hidden" name="w3ls_item" value="Red Laptop"/>
-      								<input type="hidden" name="amount" value="500.00"/>
-      								<button type="submit" className="w3ls-cart">Add to cart</button>
-      							</form>
-      						</div>
-      					</div>
-      				</div>
-      				<div className="col-md-3 agileinfo_new_products_grid">
-      					<div className="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-      						<div className="hs-wrapper hs-wrapper1">
-      							<img src="images/27.jpg" alt=" " className="img-responsive" />
-      							<img src="images/28.jpg" alt=" " className="img-responsive" />
-      							<img src="images/29.jpg" alt=" " className="img-responsive" />
-      							<img src="images/30.jpg" alt=" " className="img-responsive" />
-      							<img src="images/31.jpg" alt=" " className="img-responsive" />
-      							<div className="w3_hs_bottom w3_hs_bottom_sub">
-      								<ul>
-      									<li>
-      										<a href="#" data-toggle="modal" data-target="#myModal"><span className="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-      									</li>
-      								</ul>
-      							</div>
-      						</div>
-      						<h5><a href="single.html">Black Phone</a></h5>
-      						<div className="simpleCart_shelfItem">
-      							<p><span>$380</span> <i className="item_price">$370</i></p>
-      							<form action="#" method="post">
-      								<input type="hidden" name="cmd" value="_cart"/>
-      								<input type="hidden" name="add" value="1"/>
-      								<input type="hidden" name="w3ls_item" value="Black Phone"/>
-      								<input type="hidden" name="amount" value="370.00"/>
-      								<button type="submit" className="w3ls-cart">Add to cart</button>
-      							</form>
-      						</div>
-      					</div>
-      				</div>
-      				<div className="col-md-3 agileinfo_new_products_grid">
-      					<div className="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-      						<div className="hs-wrapper hs-wrapper1">
-      							<img src="images/34.jpg" alt=" " className="img-responsive" />
-      							<img src="images/33.jpg" alt=" " className="img-responsive" />
-      							<img src="images/32.jpg" alt=" " className="img-responsive" />
-      							<img src="images/35.jpg" alt=" " className="img-responsive" />
-      							<img src="images/36.jpg" alt=" " className="img-responsive" />
-      							<div className="w3_hs_bottom w3_hs_bottom_sub">
-      								<ul>
-      									<li>
-      										<a href="#" data-toggle="modal" data-target="#myModal5"><span className="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-      									</li>
-      								</ul>
-      							</div>
-      						</div>
-      						<h5><a href="single.html">Kids Toy</a></h5>
-      						<div className="simpleCart_shelfItem">
-      							<p><span>$150</span> <i className="item_price">$100</i></p>
-      							<form action="#" method="post">
-      								<input type="hidden" name="cmd" value="_cart"/>
-      								<input type="hidden" name="add" value="1"/>
-      								<input type="hidden" name="w3ls_item" value="Kids Toy"/>
-      								<input type="hidden" name="amount" value="100.00"/>
-      								<button type="submit" className="w3ls-cart">Add to cart</button>
-      							</form>
-      						</div>
-      					</div>
-      				</div>
-      				<div className="col-md-3 agileinfo_new_products_grid">
-      					<div className="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-      						<div className="hs-wrapper hs-wrapper1">
-      							<img src="images/37.jpg" alt=" " className="img-responsive" />
-      							<img src="images/38.jpg" alt=" " className="img-responsive" />
-      							<img src="images/39.jpg" alt=" " className="img-responsive" />
-      							<img src="images/40.jpg" alt=" " className="img-responsive" />
-      							<img src="images/41.jpg" alt=" " className="img-responsive" />
-      							<div className="w3_hs_bottom w3_hs_bottom_sub">
-      								<ul>
-      									<li>
-      										<a href="#" data-toggle="modal" data-target="#myModal6"><span className="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-      									</li>
-      								</ul>
-      							</div>
-      						</div>
-      						<h5><a href="single.html">Induction Stove</a></h5>
-      						<div className="simpleCart_shelfItem">
-      							<p><span>$280</span> <i className="item_price">$250</i></p>
-      							<form action="#" method="post">
-      								<input type="hidden" name="cmd" value="_cart"/>
-      								<input type="hidden" name="add" value="1"/>
-      								<input type="hidden" name="w3ls_item" value="Induction Stove"/>
-      								<input type="hidden" name="amount" value="250.00"/>
-      								<button type="submit" className="w3ls-cart">Add to cart</button>
-      							</form>
-      						</div>
-      					</div>
-      				</div>
-      				<div className="clearfix"> </div>
-      			</div>
+            <Item/>
       		</div>
       	</div>
-      	<div className="top-brands">
+      	{/* <div className="top-brands">
       		<div className="container">
       			<h3>Top Brands</h3>
       			<div className="sliderfig">
@@ -1240,8 +1138,10 @@ class Home extends Component {
       				</ul>
       			</div>
       		</div>
-      	</div>
-      	<div className="newsletter">
+      	</div> */}
+
+
+      	{/* <div className="newsletter">
       		<div className="container">
       			<div className="col-md-6 w3agile_newsletter_left">
       				<h3>Newsletter</h3>
@@ -1255,7 +1155,9 @@ class Home extends Component {
       			</div>
       			<div className="clearfix"> </div>
       		</div>
-      	</div>
+      	</div> */}
+
+
       </div>
     </div>
     );
